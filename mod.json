@@ -1,0 +1,8 @@
+{
+  "Name": "vtol.dash",
+  "Description": "Replaces Pilot Tacticals and Lethals with VTOL Hover and Phase Dash.",
+  "RequiredOnClient": false,
+  "LoadPriority": 0,
+  "Version": "0.1",
+  "Scripts": [],
+}
