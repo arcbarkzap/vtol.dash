@@ -1,0 +1,20 @@
+// Call Globals
+global function vtolDashInit
+
+void function vtolDashInit
+{
+    SetLoadoutGracePeriodEnabled( false )
+	SetWeaponDropsEnabled( true )
+
+   #if SERVER
+      AddCallback_OnPlayerRespawned( giveAbilities )
+   #endif
+}
+
+#if SERVER
+void function giveAbilities
+{
+   GiveOffhandWeapon( "mp_titanability_hover", OFFHAND_ORDNANCE )
+   GiveOffhandWeapon( "mp_titanability_phase_dash", OFFHAND_LEFT )
+}
+#endif
