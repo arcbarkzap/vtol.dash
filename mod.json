@@ -4,5 +4,16 @@
   "RequiredOnClient": false,
   "LoadPriority": 0,
   "Version": "0.1",
-  "Scripts": [],
+  "Scripts": [
+		{
+			"Path": "sh_vtoldash.gnut",
+			"RunOn": "MP",
+			"ClientCallback": {
+				"After": "vtolDashInit"
+			},
+            "ServerCallback": {
+                "After": "vtolDashInit"
+            }
+		}
+  ]
 }
